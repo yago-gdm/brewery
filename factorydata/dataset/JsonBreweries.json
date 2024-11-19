@@ -1,0 +1,17 @@
+{
+	"name": "JsonBreweries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServerBreweries",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}

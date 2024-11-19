@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVaultBreweries",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kvault-breweries.vault.azure.net/"
+		}
+	}
+}

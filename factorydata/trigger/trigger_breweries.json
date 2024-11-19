@@ -1,0 +1,24 @@
+{
+	"name": "trigger_breweries",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline-breweries",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-11-19T16:43:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

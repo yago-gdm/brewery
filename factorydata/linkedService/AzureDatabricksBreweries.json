@@ -1,0 +1,19 @@
+{
+	"name": "AzureDatabricksBreweries",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2039102865185289.9.azuredatabricks.net",
+			"accessToken": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaultBreweries",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "adb-token"
+			},
+			"existingClusterId": "1114-182015-qcrgmgdh"
+		}
+	}
+}

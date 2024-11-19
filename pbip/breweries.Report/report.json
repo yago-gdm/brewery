@@ -1,0 +1,134 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2},\"customTheme\":{\"name\":\"Automa12821395073462405.json\",\"version\":\"5.59\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Automa12821395073462405.json",
+            "path": "Automa12821395073462405.json",
+            "type": 201
+          },
+          {
+            "name": "oktoberfest8776419985859689.png",
+            "path": "oktoberfest8776419985859689.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Breweries",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "4636b3ca0943e8cbf59a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0ce033474cab4d25d645\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":112,\"z\":10000,\"width\":624,\"height\":256,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"GoldBreweries.state\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(GoldBreweries.name)\"}],\"Series\":[{\"queryRef\":\"GoldBreweries.brewery_type\"}],\"Tooltips\":[{\"queryRef\":\"Min(GoldBreweries.country)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"state\"},\"Name\":\"GoldBreweries.state\",\"NativeReferenceName\":\"State\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"}},\"Function\":2},\"Name\":\"CountNonNull(GoldBreweries.name)\",\"NativeReferenceName\":\"Breweries count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"brewery_type\"},\"Name\":\"GoldBreweries.brewery_type\",\"NativeReferenceName\":\"Type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"country\"}},\"Function\":3},\"Name\":\"Min(GoldBreweries.country)\",\"NativeReferenceName\":\"Country\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"}},\"Function\":2}}}]},\"columnProperties\":{\"GoldBreweries.state\":{\"displayName\":\"State\"},\"CountNonNull(GoldBreweries.name)\":{\"displayName\":\"Breweries count\"},\"GoldBreweries.brewery_type\":{\"displayName\":\"Type\"},\"Min(GoldBreweries.country)\":{\"displayName\":\"Country\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Breweries per Type and Location'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 256.00,
+          "width": 624.00,
+          "x": 16.00,
+          "y": 112.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"2d426d28089e41716017\",\"layouts\":[{\"id\":0,\"position\":{\"x\":96,\"y\":16,\"z\":5000,\"width\":288,\"height\":80,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Breweries\",\"textStyle\":{\"fontSize\":\"36pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 288.00,
+          "x": 96.00,
+          "y": 16.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"4ca0ccbbb19e2c866ba9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":16,\"z\":6000,\"width\":80,\"height\":80,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"oktoberfest8776419985859689.png\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 80.00,
+          "x": 16.00,
+          "y": 16.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"60dc4f2ddf54f8a0fb6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":384,\"z\":11000,\"width\":624,\"height\":320,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"GoldBreweries.state\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Min(GoldBreweries.name)\"}],\"Series\":[{\"queryRef\":\"GoldBreweries.brewery_type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"state\"},\"Name\":\"GoldBreweries.state\",\"NativeReferenceName\":\"State\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"}},\"Function\":2},\"Name\":\"Min(GoldBreweries.name)\",\"NativeReferenceName\":\"Breweries\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"brewery_type\"},\"Name\":\"GoldBreweries.brewery_type\",\"NativeReferenceName\":\"Type\"}]},\"columnProperties\":{\"Min(GoldBreweries.name)\":{\"displayName\":\"Breweries\"},\"GoldBreweries.brewery_type\":{\"displayName\":\"Type\"},\"GoldBreweries.state\":{\"displayName\":\"State\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapControls\":[{\"properties\":{\"showLassoButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showZoomButtons\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'aerial'\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 624.00,
+          "x": 16.00,
+          "y": 384.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"7c5f20dc9ecc9b2033ab\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704,\"y\":16,\"z\":9000,\"width\":272,\"height\":80,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"GoldBreweries.brewery_type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"brewery_type\"},\"Name\":\"GoldBreweries.brewery_type\",\"NativeReferenceName\":\"Type\"}]},\"columnProperties\":{\"GoldBreweries.brewery_type\":{\"displayName\":\"Type\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#151B23'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#151B23'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#272B34'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 704.00,
+          "y": 16.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"867849759c867aed5270\",\"layouts\":[{\"id\":0,\"position\":{\"x\":416,\"y\":16,\"z\":8500,\"width\":272,\"height\":80,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"GoldBreweries.country\",\"active\":true},{\"queryRef\":\"GoldBreweries.state\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"state\"},\"Name\":\"GoldBreweries.state\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"country\"},\"Name\":\"GoldBreweries.country\",\"NativeReferenceName\":\"Country\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"GoldBreweries.country\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"GoldBreweries\"}},\"Property\":\"country\"}}],\"isPinned\":true},{\"queryRefs\":[\"GoldBreweries.state\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'United States'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'Ireland'\"}}],\"isToggled\":true}]}}],\"columnProperties\":{\"GoldBreweries.country\":{\"displayName\":\"Country\"},\"GoldBreweries.state\":{\"displayName\":\"State\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Location'\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#151B23'\"}}}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 416.00,
+          "y": 16.00,
+          "z": 8500.00
+        },
+        {
+          "config": "{\"name\":\"d8cd835d401bf36c9821\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656,\"y\":384,\"z\":11500,\"width\":608,\"height\":320,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"GoldBreweries.country\"},{\"queryRef\":\"GoldBreweries.state\"},{\"queryRef\":\"GoldBreweries.brewery_type\"},{\"queryRef\":\"GoldBreweries.name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"brewery_type\"},\"Name\":\"GoldBreweries.brewery_type\",\"NativeReferenceName\":\"Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"country\"},\"Name\":\"GoldBreweries.country\",\"NativeReferenceName\":\"Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"},\"Name\":\"GoldBreweries.name\",\"NativeReferenceName\":\"Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"state\"},\"Name\":\"GoldBreweries.state\",\"NativeReferenceName\":\"State\"}]},\"columnProperties\":{\"GoldBreweries.state\":{\"displayName\":\"State\"},\"GoldBreweries.name\":{\"displayName\":\"Name\"},\"GoldBreweries.country\":{\"displayName\":\"Country\"},\"GoldBreweries.brewery_type\":{\"displayName\":\"Type\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"276.0769230769231D\"}}}},\"selector\":{\"metadata\":\"GoldBreweries.name\"}},{\"properties\":{},\"selector\":{\"metadata\":\"GoldBreweries.country\"}},{\"properties\":{},\"selector\":{\"metadata\":\"GoldBreweries.state\"}},{\"properties\":{},\"selector\":{\"metadata\":\"GoldBreweries.brewery_type\"}}],\"values\":[{\"properties\":{\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"columnHeaders\":[{\"properties\":{\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"autoSizeColumnWidth\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 608.00,
+          "x": 656.00,
+          "y": 384.00,
+          "z": 11500.00
+        },
+        {
+          "config": "{\"name\":\"ebee676cd2e897cf7169\",\"layouts\":[{\"id\":0,\"position\":{\"x\":992,\"y\":16,\"z\":9500,\"width\":272,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"GoldBreweries.name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"},\"Name\":\"GoldBreweries.name\",\"NativeReferenceName\":\"Name\"}]},\"columnProperties\":{\"GoldBreweries.name\":{\"displayName\":\"Name\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#151B23'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#151B23'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#272B34'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 992.00,
+          "y": 16.00,
+          "z": 9500.00
+        },
+        {
+          "config": "{\"name\":\"f15c060d33d424fc2beb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656,\"y\":112,\"z\":10500,\"width\":608,\"height\":256,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"GoldBreweries.brewery_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Count(GoldBreweries.name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GoldBreweries\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"brewery_type\"},\"Name\":\"GoldBreweries.brewery_type\",\"NativeReferenceName\":\"brewery_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"}},\"Function\":2},\"Name\":\"Count(GoldBreweries.name)\",\"NativeReferenceName\":\"Contagem de name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"name\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"totals\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Breweries per Type'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 256.00,
+          "width": 608.00,
+          "x": 656.00,
+          "y": 112.00,
+          "z": 10500.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Automa12821395073462405.json"
+}

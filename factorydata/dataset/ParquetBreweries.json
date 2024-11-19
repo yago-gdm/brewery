@@ -1,0 +1,19 @@
+{
+	"name": "ParquetBreweries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageBreweries",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
